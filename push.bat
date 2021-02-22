@@ -12,5 +12,6 @@ git commit -m "%jetzt% data push"
 git push -u origin master
 
 # repeat
-#timeout 86400
-#goto loop
+timeout 86400
+goto loop
+
