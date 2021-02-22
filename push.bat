@@ -1,19 +1,11 @@
-#!/bin/bash
 
-:loop
+## setup variable
+set jetzt=%DATE:~10,4%%DATE:~4,2%%DATE:~7,2%
 
-# regular push to github
-# Set some date
-jetzt=`date +%Y%m%d`
-
-# update rep
+# update
 git pull
 
-# Now add any changes
+# push
 git add .
-# Now commit
-git commit -m "$jetzt data push"
+git commit -m "%jetzt% data push"
 git push -u origin master
-
-timeout 86400
-goto loop
