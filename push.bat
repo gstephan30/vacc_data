@@ -13,4 +13,4 @@ git push -u origin master
 
 # repeat
 timeout 86400
-goto loop
+#goto loop
