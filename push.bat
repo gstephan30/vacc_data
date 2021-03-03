@@ -1,17 +1,17 @@
 :loop
 
-## setup variable
+echo setup variable
 set jetzt=%DATE:~10,4%%DATE:~4,2%%DATE:~7,2%
 
-# update
+echo update
 git pull
 
-# push
+echo push
 git add .
 git commit -m "%jetzt% data push"
 git push -u origin master
 
-# repeat
+echo repeat
 timeout 86400
 goto loop
 
