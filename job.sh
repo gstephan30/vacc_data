@@ -1,4 +1,5 @@
 #!/bin/sh
+# for crontab
 depdir=/home/pi/vacc_data
 jetzt=`date +%Y%m%d`
 cd vacc_data
